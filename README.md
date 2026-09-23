@@ -281,6 +281,13 @@ GOOGLE_API_KEY=your_gemini_api_key_here
 BASE_SEPOLIA_RPC_URL=https://sepolia.base.org
 DEVELOPER_PRIVATE_KEY=your_wallet_private_key_here
 CROP_PASSPORT_CONTRACT_ADDRESS=0xDd819A09aff9A62D1F6Ad662c6cC34d4B5D7DAd7
+
+# Databases & Storage (New)
+MONGODB_URI=mongodb+srv://<user>:<password>@cluster0...
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+
 PORT=8000
 HOST=0.0.0.0
 ```
@@ -321,6 +328,29 @@ cd ../contracts && npx hardhat test
 ```
 
 ---
+
+
+---
+
+## 📈 Platform Features (V2 Updates)
+
+* **Admin Dashboard & Telemetry:** Full visibility into platform usage, global scan history, and role-based user management via a secure React Admin dashboard backed by MongoDB Atlas.
+* **Professional PDF Generation (jsPDF):** Farmers and KVK extension workers can generate highly detailed, dynamically styled PDF diagnostic reports featuring:
+  * Embedded Cloudinary crop images
+  * Red/Green color-coded Safety Spray Status
+  * Exact ICAR generic chemical prescriptions
+  * Base Sepolia Blockchain verification links
+  * Nearest KVK location referrals for local assistance.
+
+---
+
+## 🛡️ Strategic Vision & Business Model (B2G + Marketplace)
+AgriNexus is built primarily for **B2G (Business-to-Government)** deployment. By acting as an unbiased, ICAR-compliant oracle, it serves as a critical infrastructure layer for state agriculture departments and KVKs. 
+
+To maintain our zero-hallucination, unbiased agronomic integrity, AgriNexus avoids direct corporate pesticide bias. Instead, it monetizes via a **Generic Diagnosis + Sponsored Fulfillment** model:
+1. The AI neutral-diagnoses the required generic chemical (e.g., *Copper Oxychloride 50% WP*).
+2. Regional verified sellers optionally sponsor the local fulfillment marketplace. 
+3. Furthermore, aggregate immutable disease heatmaps are monetized for macro-level crop insurance underwriting.
 
 ## 📄 License
 Distributed under the **MIT License**.
